@@ -5,6 +5,7 @@
 # Y ----> draw ------> 3
 # Z ----> win  ------> 6
 
+
 def outcome_score(outcome):
     if outcome == "Y":
         return 3
@@ -13,6 +14,7 @@ def outcome_score(outcome):
     if outcome == "X":
         return 0
 
+
 def move_score(move):
     if move == "rock":
         return 1
@@ -20,6 +22,7 @@ def move_score(move):
         return 2
     if move == "scissors":
         return 3
+
 
 def required_move(ur_move, outcome):
     if ur_move == "A":
@@ -43,7 +46,6 @@ def required_move(ur_move, outcome):
             return "scissors"
         if outcome == "Z":
             return "rock"
-
 
 
 def round_score(line):
